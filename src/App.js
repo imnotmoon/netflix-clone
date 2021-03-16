@@ -3,16 +3,17 @@ import './App.css';
 import Row from './Row'
 import requests from './requests'
 import Banner from'./Banner'
+import Nav from './Nav'
 
 function App() {
   return (
     <div className="App">
       {/* Nav */}
-      
+      <Nav />
 
       {/* Banner */}
       <Banner />
-      
+
       {/* movie rows */}
       <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/>   
           {/* isLargeRow만 쓰면 default는 true */}
